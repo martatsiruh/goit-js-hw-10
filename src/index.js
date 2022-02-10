@@ -10,6 +10,10 @@ import getRefs from './js/get-refs';
 import debounce from 'lodash.debounce';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+Notify.init({
+  useIcon: false,
+  cssAnimationStyle: 'from-right',
+});
 
 const DEBOUNCE_DELAY = 300;
 const LENGTH = 10;
